@@ -1,0 +1,37 @@
+@mixin title {
+  position: relative;
+  font-family: "Montserrat";
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 43px;
+  color: white;
+  margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 18px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+  }
+}
+
+@mixin wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 150px;
+  width: 100%;
+
+  @media screen and(max-width: 1440px) {
+    padding: 0 24px;
+  }
+
+  @media screen and(max-width: 768px) {
+    padding: 0 15px;
+  }
+}

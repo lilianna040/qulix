@@ -1,0 +1,36 @@
+@mixin link {
+  position: relative;
+  margin-left: 103px;
+  font-family: "Maven Pro";
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: #e8c5ed;
+  }
+
+  @media screen and(max-width: 1440px) {
+    margin-left: 80px;
+  }
+
+  @media screen and(max-width: 768px) {
+    display: none;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+@mixin link-active {
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    border-bottom: 2px #fdf1ff solid;
+  }
+}

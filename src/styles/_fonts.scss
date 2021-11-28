@@ -1,0 +1,27 @@
+@mixin maven-normal {
+  font-family: "Maven Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+@mixin maven-normal-title {
+  font-family: "Maven Pro";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin maven-bold {
+  font-family: "Maven Pro";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+@mixin maven-bold-title {
+  font-family: "Maven Pro";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}

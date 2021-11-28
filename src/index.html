@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qulix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <h1 class="header-title">manage</h1>
+    <nav class="header-navigation">
+      <a class="link" href="">Calendar</a>
+      <a class="link link-active" href="">Plans</a>
+      <a class="link" href="">To Do</a>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <section class="filters">
+
+      <div class="checkboxes">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="label">Today</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="label">Tomorrow</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="label">Week</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="label">Month</span>
+        </label>
+      </div>
+
+      <div class="select-and-toggle">
+        <select class="select">
+          <option value="1">Family</option>
+          <option value="2">Work</option>
+          <option value="3">Study</option>
+          <option value="4">Wish</option>
+        </select>
+
+        <div class="toggle"> 
+          <label class="option"> 
+            <input class="input" type="checkbox"/> 
+            <span class="label"> 
+              <span>Major</span> 
+            </span> 
+          </label>
+          <label class="option"> 
+            <input class="input" type="checkbox"/> 
+            <span class="label"> 
+              <span>Minor</span> 
+            </span> 
+          </label>
+      </div>
+      </div>
+
+      <div class="search">
+        <span class="search-icon"></span>
+        <input placeholder="Search for plans" type="text">
+      </div>
+
+    </section>
+
+    <section class="cards">
+      <div class="grid">
+        <button class="add-card">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="inherit" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 18H36" stroke-width="2"/>
+            <path d="M18 0L18 36" stroke-width="2"/>
+          </svg>
+        </button>
+
+        <article class="card large-card">
+          <picture class="card-picture">
+            <source media="(max-width: 768px)" srcset="assets/mobile/vacation.jpg"/>
+            <source media="(max-width: 1440px)" srcset="assets/tablet/vacation.jpg" />
+            <img class="image" src="assets/desktop/vacation.jpg" alt="vacation"/>
+          </picture>
+          <div class="card-content">
+            <div>
+              <span class="card-name">Vacation</span>
+              <span class="card-date">10/05/2019</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card large-card">
+          <picture class="card-picture">
+            <source media="(max-width: 768px)" srcset="assets/mobile/cinema.jpg"/>
+            <source media="(max-width: 1440px)" srcset="assets/tablet/cinema.jpg"/>
+            <img class="image" src="assets/desktop/cinema.jpg" alt="cinema"/>
+          </picture>
+          <div class="card-content">
+            <div>
+              <span class="card-name">Cinema</span>
+              <span class="card-date">
+                <span>11/05/2019</span><span>7PM</span>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <h3 class="card-time">7PM - 8PM</h3>
+            <div>
+              <span class="card-name">Doctor</span>
+              <span class="card-date">11/05/2019</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card major-card">
+          <div class="card-content">
+            <h3 class="card-time">9AM - 10AM</h3>
+            <div>
+              <span class="card-name">Meeting</span>
+              <span class="card-date">10/05/2019</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card large-card">
+          <picture class="card-picture">
+            <source media="(max-width: 768px)" srcset="assets/mobile/dinner.jpg"/>
+            <source media="(max-width: 1440px)" srcset="assets/tablet/dinner.jpg"/>
+            <img class="image" src="assets/desktop/dinner.jpg" alt="dinner"/>
+          </picture>
+          <div class="card-content">
+            <div>
+              <span class="card-name">Family dinner</span>
+              <span class="card-date">11/12/2019</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card large-card">
+          <picture class="card-picture">
+            <source media="(max-width: 768px)" srcset="assets/mobile/coffee.jpg"/>
+            <source media="(max-width: 1440px)" srcset="assets/tablet/coffee.jpg"/>
+            <img class="image" src="assets/desktop/coffee.jpg" alt="coffee"/>
+          </picture>
+          <div class="card-content">
+            <div>
+              <span class="card-name">Coffee with Susan</span>
+              <span class="card-date">10/05/2019</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <h3 class="card-time">4PM - 5PM</h3>
+            <div>
+              <span class="card-name">Massage</span>
+              <span class="card-date">11/08/2019</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <h2 class="footer-title">manage</h2>
+    <nav class="footer-navigation">
+      <a class="link" href="">Calendar</a>
+      <a class="link" href="">Plans</a>
+      <a class="link" href="">To Do</a>
+    </nav>
+    <div class="contacts">
+      <a class="contact inst" href="">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="inherit" stroke="inherit" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.905 7.04741L23.905 7.04753C23.9867 8.49926 23.9851 9.94173 23.9835 11.3938C23.9833 11.5956 23.983 11.7977 23.983 12C23.983 12.2262 23.9834 12.4522 23.9837 12.6779C23.9858 14.1057 23.9879 15.5246 23.905 16.9524L23.905 16.9526C23.812 18.8719 23.3774 20.5696 21.9733 21.9737C20.5722 23.3748 18.8716 23.8125 16.9523 23.9054L16.9522 23.9055C15.5004 23.9871 14.058 23.9855 12.6059 23.9839C12.4041 23.9837 12.2021 23.9835 11.9998 23.9835C11.7979 23.9835 11.5962 23.9837 11.3947 23.9839C9.94464 23.9855 8.5018 23.9871 7.0474 23.9055L7.04728 23.9054C5.12797 23.8125 3.43034 23.3778 2.02627 21.9737C0.625194 20.5726 0.187517 18.8719 0.0945513 16.9526L0.0945445 16.9525C0.012865 15.5007 0.014465 14.0558 0.0160713 12.6051C0.0162946 12.4035 0.0165179 12.2018 0.0165179 12C0.0165179 11.7981 0.0162945 11.5964 0.0160712 11.3949C0.0144649 9.94481 0.0128666 8.50195 0.094545 7.04753L0.0945509 7.04741C0.187517 5.12807 0.622195 3.4304 2.02627 2.0263C3.42734 0.625205 5.12798 0.18752 7.04728 0.0945528L7.0474 0.094546C8.49911 0.0128691 9.94157 0.0144648 11.3936 0.0160711C11.5954 0.0162944 11.7975 0.0165179 11.9998 0.0165179C12.2016 0.0165179 12.4033 0.0162945 12.6049 0.0160712C14.0549 0.0144649 15.4978 0.0128665 16.9522 0.0945465L16.9523 0.0945523C18.8716 0.18752 20.5692 0.622206 21.9733 2.0263C23.3744 3.4274 23.812 5.12808 23.905 7.04741ZM8.01077 12C8.01077 9.80514 9.80196 8.01392 11.9968 8.01392C14.1916 8.01392 15.9828 9.80514 15.9828 12C15.9828 14.1949 14.1916 15.9861 11.9968 15.9861C9.80196 15.9861 8.01077 14.1949 8.01077 12ZM5.8241 12C5.8241 15.4159 8.58091 18.1728 11.9968 18.1728C15.4126 18.1728 18.1694 15.4159 18.1694 12C18.1694 8.58407 15.4126 5.82721 11.9968 5.82721C8.58091 5.82721 5.8241 8.58407 5.8241 12ZM16.9524 5.59067C16.9524 6.39484 17.6018 7.04427 18.406 7.04427C18.5969 7.04451 18.786 7.00707 18.9625 6.9341C19.139 6.86114 19.2993 6.75407 19.4343 6.61905C19.5694 6.48402 19.6764 6.32368 19.7494 6.14721C19.8224 5.97074 19.8598 5.78161 19.8596 5.59067C19.8596 4.7865 19.2101 4.13707 18.406 4.13707C17.6018 4.13707 16.9524 4.7865 16.9524 5.59067Z"
+            stroke-width="0.03125"
+          />
+        </svg>        
+      </a>
+      <a class="contact face" href="">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="inherit"  xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_77_110)">
+            <path
+              d="M4.38226 0C1.95468 0 0 1.95468 0 4.38226V19.6178C0 22.0453 1.95468 24 4.38226 24H12.6398V14.6175H10.1588V11.2395H12.6398V8.35351C12.6398 6.08611 14.1057 4.00426 17.4825 4.00426C18.8497 4.00426 19.8608 4.13551 19.8608 4.13551L19.7813 7.29002C19.7813 7.29002 18.7501 7.28028 17.625 7.28028C16.4073 7.28028 16.212 7.84135 16.212 8.77279V11.2395H19.878L19.7183 14.6175H16.212V24H19.6177C22.0453 24 24 22.0454 24 19.6178V4.38228C24 1.9547 22.0453 2.4e-05 19.6177 2.4e-05H4.38223L4.38226 0Z"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_77_110">
+              <rect width="24" height="24" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a class="contact twit" href="">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21.4286 0H2.57143C1.15179 0 0 1.15179 0 2.57143V21.4286C0 22.8482 1.15179 24 2.57143 24H21.4286C22.8482 24 24 22.8482 24 21.4286V2.57143C24 1.15179 22.8482 0 21.4286 0ZM18.8089 8.50714C18.8196 8.65714 18.8196 8.8125 18.8196 8.9625C18.8196 13.6071 15.2839 18.9589 8.82321 18.9589C6.83036 18.9589 4.98214 18.3804 3.42857 17.3839C3.7125 17.4161 3.98571 17.4268 4.275 17.4268C5.91964 17.4268 7.43036 16.8696 8.63571 15.9268C7.09286 15.8946 5.79643 14.8821 5.35179 13.4893C5.89286 13.5696 6.38036 13.5696 6.9375 13.425C5.33036 13.0982 4.125 11.6839 4.125 9.975V9.93214C4.59107 10.1946 5.1375 10.3554 5.71071 10.3768C5.2288 10.0562 4.83374 9.62136 4.56079 9.11098C4.28784 8.60059 4.14548 8.03057 4.14643 7.45179C4.14643 6.79821 4.31786 6.19821 4.62321 5.67857C6.35357 7.81071 8.95179 9.20357 11.8661 9.35357C11.3679 6.96964 13.1518 5.03571 15.2946 5.03571C16.3071 5.03571 17.2179 5.45893 17.8607 6.14464C18.6536 5.99464 19.4143 5.7 20.0893 5.29821C19.8268 6.1125 19.275 6.79821 18.5464 7.23214C19.2536 7.15714 19.9393 6.95893 20.5714 6.68571C20.0946 7.3875 19.4946 8.00893 18.8089 8.50714Z"
+          />
+        </svg>        
+      </a>
+    </div>
+
+    <nav class="mobile-navigation">
+      <a class="link" href="">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.26786 6.5H12.7321C12.8795 6.5 13 6.62656 13 6.78125V12.875C13 13.4961 12.5201 14 11.9286 14H4.07143C3.47991 14 3 13.4961 3 12.875V6.78125C3 6.62656 3.12054 6.5 3.26786 6.5ZM13 5.46875V4.625C13 4.00391 12.5201 3.5 11.9286 3.5H10.8571V2.28125C10.8571 2.12656 10.7366 2 10.5893 2H9.69643C9.54911 2 9.42857 2.12656 9.42857 2.28125V3.5H6.57143V2.28125C6.57143 2.12656 6.45089 2 6.30357 2H5.41071C5.26339 2 5.14286 2.12656 5.14286 2.28125V3.5H4.07143C3.47991 3.5 3 4.00391 3 4.625V5.46875C3 5.62344 3.12054 5.75 3.26786 5.75H12.7321C12.8795 5.75 13 5.62344 13 5.46875Z"/>
+        </svg>
+        <span>Calendar</span>
+      </a>
+      <a class="link link-active" href="">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8126 2.18825C13.725 2.10062 13.6139 2.0402 13.4927 2.01425C13.3715 1.9883 13.2454 1.99793 13.1295 2.04199L2.41424 6.09781H2.41209C2.28854 6.14533 2.18268 6.22984 2.10895 6.33978C2.03522 6.44972 1.99723 6.57974 2.00016 6.71208C2.00309 6.84443 2.0468 6.97264 2.12532 7.07921C2.20384 7.18578 2.31335 7.26551 2.43888 7.30752L2.44986 7.311L6.12762 8.88152C6.19935 8.9033 6.27554 8.90588 6.34858 8.88901C6.42162 8.87213 6.48896 8.83639 6.54387 8.78536L12.4465 3.28518C12.4641 3.26759 12.485 3.25363 12.5079 3.24412C12.5309 3.2346 12.5556 3.2297 12.5804 3.2297C12.6053 3.2297 12.6299 3.2346 12.6529 3.24412C12.6759 3.25363 12.6968 3.26759 12.7144 3.28518C12.7319 3.30276 12.7459 3.32365 12.7554 3.34663C12.7649 3.36961 12.7698 3.39424 12.7698 3.41911C12.7698 3.44398 12.7649 3.46862 12.7554 3.4916C12.7459 3.51458 12.7319 3.53546 12.7144 3.55305L7.21407 9.45316C7.16303 9.50807 7.1273 9.57541 7.11042 9.64846C7.09355 9.7215 7.09613 9.79769 7.1179 9.86943L8.68892 13.5494C8.69053 13.5548 8.69213 13.5596 8.69401 13.5647C8.77972 13.813 8.99669 13.9882 9.25893 14H9.28572C9.4181 14.0007 9.54765 13.9617 9.65753 13.8878C9.7674 13.8139 9.85251 13.7087 9.9018 13.5859L13.957 2.87319C14.0017 2.75728 14.0118 2.6309 13.9862 2.50935C13.9606 2.38779 13.9003 2.27626 13.8126 2.18825V2.18825Z"/>
+        </svg>
+        <span>Plans</span>
+      </a>
+      <a class="link" href="">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 2C4.69169 2 2 4.69146 2 8C2 11.3085 4.69169 14 8 14C11.3083 14 14 11.3085 14 8C14 4.69146 11.3083 2 8 2ZM11.345 5.999L7.65269 10.1528C7.56177 10.2551 7.43508 10.3077 7.30746 10.3077C7.20615 10.3077 7.10438 10.2745 7.01923 10.2066L4.71154 8.36046C4.51262 8.20146 4.48031 7.91092 4.63954 7.71177C4.79854 7.51262 5.08931 7.48031 5.28823 7.63954L7.25369 9.21177L10.655 5.38538C10.8239 5.19477 11.1161 5.17769 11.3065 5.34708C11.4971 5.51669 11.5144 5.80838 11.345 5.999Z"/>
+        </svg>
+        <span>To Do</span>
+      </a>
+      <a class="share" href="">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.6774 9.5C13.9626 9.5 15 10.505 15 11.75C15 12.995 13.9626 14 12.6774 14C11.3923 14 10.3548 12.995 10.3548 11.75C10.3548 11.57 10.3781 11.405 10.4245 11.2325L7.03355 9.5075C6.60774 9.965 6.00387 10.25 5.32258 10.25C4.03742 10.25 3 9.245 3 8C3 6.755 4.03742 5.75 5.32258 5.75C6.00387 5.75 6.60774 6.0425 7.03355 6.4925L10.4245 4.7675C10.3781 4.595 10.3548 4.43 10.3548 4.25C10.3548 3.005 11.3923 2 12.6774 2C13.9626 2 15 3.005 15 4.25C15 5.495 13.9626 6.5 12.6774 6.5C11.9961 6.5 11.3923 6.2075 10.9665 5.7575L7.57548 7.4825C7.66925 7.82152 7.66925 8.17848 7.57548 8.5175L10.9665 10.2425C11.3923 9.785 11.9961 9.5 12.6774 9.5Z" fill="#FDFDFD"/>
+        </svg>
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>

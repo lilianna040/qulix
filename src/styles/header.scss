@@ -1,0 +1,25 @@
+@use "page";
+@use "navigation";
+
+.header {
+  @include page.wrapper;
+  height: 50px;
+  background-color: #484b98;
+
+  .header-title {
+    @include page.title;
+  }
+
+  .header-navigation {
+    display: flex;
+    align-items: center;
+
+    .link {
+      @include navigation.link;
+    }
+
+    .link-active {
+      @include navigation.link-active;
+    }
+  }
+}
